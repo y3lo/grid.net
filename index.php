@@ -10,5 +10,3 @@ $data = [
 	'signup.php'=>'Sign Up',
 	'signin.php'=>'Sign In'
 ];
-$app = new Core;
-$app->run();
