@@ -29,6 +29,9 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic,latin);
+*{
+  box-sizing: border-box;
+}
 
 .container {
   position: relative;
@@ -36,7 +39,7 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;}
 .column,
 .columns {
   width: 100%;
@@ -124,11 +127,29 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  font-size: 14px; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5;
   font-weight: 400;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: #000;
+  background: #fefefe;
+}
+div.main-navbar{
+  width: 20%;
+  float: left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  min-height: 500px;
+  height: 100%;
+  background: #151515;
+  color: cyan;
+
+}
+div.main-content{
+  float: right;
+  width: 80%;
+}
 
 
 /* Typography
@@ -291,7 +312,7 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: none; }/*circle inside*/
 ol {
   list-style: decimal inside; }
 ol, ul {
